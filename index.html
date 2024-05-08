@@ -9,6 +9,11 @@
   <meta name="description" content="Surya Pratap Singh Chauhan's Portfolio">
   <link rel="icon" href="./assets/nyancat.gif" type="image/gif" >
   <link rel="stylesheet" href="./assets/css/main.css">
+  <style>
+    .gap-image {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
   <body>
@@ -64,7 +69,9 @@
 <div class="user-details"><h1> Featured Projects</h1></div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="KeyGuardian" src="./assets/img/main_menu.PNG" />
+  <img class="gap-image" alt="Main Menu" src="./assets/img/main_menu.PNG" />
+  <img class="gap-image" alt="Hashify" src="./assets/img/hashify.PNG" />
+  <!-- <img class="gap-image" alt="" src="./assets/img/img.PNG" /> -->
   </div>
   <div class="contents">
     <h3> Project KeyGuardian </h3>
@@ -73,14 +80,15 @@
       <li> hashlib</li>
       <li> zlib</li>
     </ul>
-    <p>KeyGuardian is a robust Python tool crafted for data encryption, decryption, hash identification, and brute-force
-      decryption. This versatile tool is tailored to offer developers and security enthusiasts a dependable solution for
+    <p>KeyGuardian is a robust Python tool crafted for data hash identification, encryption & decryption of files and folders using Fernet, and can create hashes for the top 20 hashing algorithms.
+      This versatile tool is tailored to offer developers and security enthusiasts a dependable solution for
       safeguarding and handling sensitive information.
     <ul>
       <li>Hash Identification: Identify the hash type of provided hashes.</li>
-      <li>Data Encryption: Securely encrypt your sensitive data using advanced encryption algorithms.</li>
-      <li>Data Decryption: Decrypt encrypted data using the appropriate key.</li>
-      <li>Brute Force Decryption: Attempt to decrypt data using a brute force approach. </li>
+      <li>Hashifying: Can generate hashes of plain text for up to the top 20 hashing algorithms.</li>
+      <li>File/Folder Encryption: Securely encrypt your sensitive data using advanced encryption algorithms, and automatically save the key.</li>
+      <li>File/Folder Decryption: Decrypt encrypted data using the appropriate key.</li>
+      <!-- <li>Brute Force Decryption: Attempt to decrypt data using a brute force approach. </li> -->
     </ul>
     </p>
     <a class="project-link" href="https://github.com/brodante/KeyGuardian">Check it out</a>
@@ -111,8 +119,7 @@
       <li> C++</li>
     </ul>
     <p>EndeCry is a reliable encryption and decryption tool designed for data protection. Developed in C++, it provides
-      a straightforward command-line interface, allowing users to secure their files effortlessly. Using modern
-      cryptographic algorithms, EndeCry ensures the confidentiality of sensitive data. Simplify file security with
+      a straightforward command-line interface, allowing users to secure their files effortlessly. Using a simple dynamic index based ROT algorithm, EndeCry ensures the confidentiality of sensitive data. Simplify file security with
       EndeCry's efficient approach to encryption and decryption.</p>
     <a class="project-link" href="https://github.com/brodante/EndeCry">Check it out</a>
   </div>
@@ -135,7 +142,7 @@ if (dnt != "1" && dnt != "yes") {
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create', '', 'auto');
+ga('create', 'G-E79S8L28HV', 'auto');
 ga('send', 'pageview');
 }
 </script>
