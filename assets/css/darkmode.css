@@ -2,17 +2,34 @@
 :root {
   --background-color: #fff;
   --text-color: #000;
+  --link-color: #0000ee;
 }
 
 .dark-mode {
   --background-color: #121212;
   --text-color: #e0e0e0;
+  --link-color: #80b3ff; /* Light blue for better readability in dark mode */
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.3s;
+}
+
+.header,
+.footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+p, h1, h2, h3, h4, ul, li {
+  color: var(--text-color);
 }
 
 #theme-toggle {
@@ -40,4 +57,23 @@ body {
 
 #theme-toggle.dark:hover {
   background: rgba(255, 255, 255, 0.6);
+}
+
+.project-link {
+  color: var(--link-color);
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #ffb3b3; /* Light reddish for hover effect */
+}
+
+/* Images and cards */
+.user-projects img {
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+
+.user-projects img:hover {
+  filter: brightness(1);
 }
