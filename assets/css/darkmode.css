@@ -1,0 +1,43 @@
+/* darkmode.css */
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#theme-toggle.dark {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+#theme-toggle.dark:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
