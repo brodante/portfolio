@@ -1,4 +1,5 @@
 <script>
+  console.log("working"); 
   const toggleButton = document.getElementById('theme-toggle');
   const body = document.body;
 
