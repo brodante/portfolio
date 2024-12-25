@@ -4,9 +4,36 @@
   --text-color: #000;
 }
 
+
 .dark-mode {
   --background-color: #121212;
   --text-color: #e0e0e0;
+}
+
+.dark-mode a {
+  color: #03dac6;
+  /* Bright teal for links in dark mode */
+}
+
+.dark-mode a:hover {
+  color: #bb86fc;
+  /*Light purple when hovering over links */
+}
+
+.dark-mode p, .dark-mode ul, .dark-mode li {
+  color: #ffffff;
+  /* White text for readability */
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+  color: #ffffff;
+  /* White text for headings */
+}
+
+.dark-mode .user-projects .contents,
+.dark-mode .user-projects .contents-right {
+  color: #ffffff;
+  /* White text for project descriptions */
 }
 
 body {
@@ -16,17 +43,18 @@ body {
 }
 
 #theme-toggle {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.95);
   background: rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   color: #fff;
   cursor: pointer;
   font-size: 14px;
   transition: background 0.3s;
+  z-index: 999999;
 }
 
 #theme-toggle:hover {
@@ -34,10 +62,10 @@ body {
 }
 
 #theme-toggle.dark {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.95);
   color: #000;
 }
 
 #theme-toggle.dark:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.95);
 }
