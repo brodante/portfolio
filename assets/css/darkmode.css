@@ -42,6 +42,66 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Default button style with frosty glass effect */
+#theme-toggle {
+  position: fixed;
+  /* Keeps the button in a fixed spot */
+  top: 20px;
+  /* Distance from the top */
+  right: 20px;
+  /* Distance from the right */
+  z-index: 1000;
+  /* Ensures it stays above other elements */
+  padding: 10px 20px;
+  /* Padding for size and click area */
+  border: none;
+  /* No border */
+  border-radius: 25px;
+  /* Rounded edges for a pill-shaped look */
+  background: rgba(0, 0, 0, 0.2);
+  /* Dark tint for light mode */
+  backdrop-filter: blur(10px);
+  /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  /* Frosted glass for Safari */
+  color: white;
+  /* White text/icon color */
+  font-size: 16px;
+  /* Icon size */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+#theme-toggle:hover {
+  transform: scale(1.1);
+  /* Subtle zoom-in effect */
+}
+
+/* Dark mode style for the button */
+#theme-toggle.dark {
+  background: rgba(255, 255, 255, 0.2);
+  /* Whitish tint for visibility in dark mode */
+  backdrop-filter: blur(10px);
+  /* Frosted glass effect remains */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+}
+
+/* Hover effect in dark mode */
+#theme-toggle.dark:hover {
+  background: rgba(255, 255, 255, 0.3);
+  /* Slightly brighter frosted look on hover */
+}
+
+/* Hover effect in light mode */
+#theme-toggle:hover:not(.dark) {
+  background: rgba(0, 0, 0, 0.3);
+  /* Slightly darker frosted look on hover in light mode */
+}
+
+/* 
 #theme-toggle {
   position: fixed;
   top: 20px;
@@ -68,4 +128,4 @@ body {
 
 #theme-toggle.dark:hover {
   background: rgba(255, 255, 255, 0.95);
-}
+} */
