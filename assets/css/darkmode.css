@@ -101,6 +101,24 @@ body {
   /* Slightly darker frosted look on hover in light mode */
 }
 
+/* KanjiWidgets light/dark preview images */
+.kanji-widget-img {
+  content: url("../img/kanji-widget-light.PNG");
+  transition: opacity 0.3s ease;
+}
+
+.dark-mode .kanji-widget-img {
+  content: url("../img/kanji-widget-dark.PNG");
+}
+/* KanjiWebapp light/dark preview images */
+.kanji-web-img {
+  content: url("../img/kanji-web-app-light.PNG");
+  transition: opacity 0.3s ease;
+}
+
+.dark-mode .kanji-web-img {
+  content: url("../img/kanji-web-app-dark.PNG");
+}
 /* 
 #theme-toggle {
   position: fixed;
